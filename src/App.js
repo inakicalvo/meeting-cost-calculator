@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import PersonForm from "./components/PersonForm";
+import Table from "./components/Table";
 
 function App() {
+  const [participants, setParticipants] = useState([
+    { name: "Iñaki Calvo", time: 2, rate: 20 },
+  ]);
+
+  const addParticipant = (participantInfo) => {
+    setParticipants([...participants, participantInfo]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section id="app">
+      <div className="App">
+        <div className="header">
+          <h1>Meeting cost calculator</h1>
+          <p className="lead">
+            Enter the data and you will get the total cost of your meeting!
+          </p>
+        </div>
+        <div className="row">
+          <PersonForm addParticipant={addParticipant} />
+          <Table participants={participants} />
+        </div>
+      </div>
+    </section>
   );
 }
 
