@@ -24,7 +24,7 @@ const Table = ({ participants }) => {
       <tr>
         {/* <td></td>
         <td></td> */}
-        <td colSpan={3} className="no-left-bottom-border td-right fw-700">Total cost</td>
+        <td colSpan={3} className="no-left-bottom-border td-right fw-700">Total cost 👉</td>
         <td className="td-right fw-700">{participants.length > 1 ? totalCost : ''} $</td>
       </tr>
     </table>

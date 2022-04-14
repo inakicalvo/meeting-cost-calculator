@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import Footer from "./components/Footer";
 import PersonForm from "./components/PersonForm";
 import Table from "./components/Table";
 
@@ -13,20 +14,23 @@ function App() {
   };
 
   return (
-    <section id="app">
-      <div className="App">
-        <div className="header">
-          <h1>Meeting cost calculator</h1>
-          <p className="lead">
-            Enter the data and you will get the total cost of your meeting!
-          </p>
+    <main>
+      <section id="app">
+        <div className="App">
+          <div className="header">
+            <h1>Meeting cost calculator</h1>
+            <p className="lead">
+              Enter the data and you will get the total cost of your meeting!
+            </p>
+          </div>
+          <div className="row">
+            <PersonForm addParticipant={addParticipant} />
+            <Table participants={participants} />
+          </div>
         </div>
-        <div className="row">
-          <PersonForm addParticipant={addParticipant} />
-          <Table participants={participants} />
-        </div>
-      </div>
-    </section>
+      </section>
+      <Footer />
+    </main>
   );
 }
 
