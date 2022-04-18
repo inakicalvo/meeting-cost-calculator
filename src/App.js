@@ -6,7 +6,7 @@ import Table from "./components/Table";
 
 function App() {
   const [participants, setParticipants] = useState([
-    { name: "Iñaki Calvo", time: 2, rate: 20 },
+    // { name: "Iñaki Calvo", time: 2, rate: 20 },
   ]);
 
   const addParticipant = (participantInfo) => {

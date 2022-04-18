@@ -5,7 +5,7 @@ const Table = ({ participants }) => {
 
 
   if (!participants.length)
-    return <div>No participants added. Please, add them!</div>;
+    return <div></div>;
     const totalCost = participants.reduce(
         (acc, participant) => (acc += participant.time * participant.rate),
         0
@@ -25,7 +25,7 @@ const Table = ({ participants }) => {
         {/* <td></td>
         <td></td> */}
         <td colSpan={3} className="no-left-bottom-border td-right fw-700">Total cost 👉</td>
-        <td className="td-right fw-700">{participants.length > 1 ? totalCost.toFixed(2) : ''} $</td>
+        <td className="td-right fw-700">{participants.length > 1 ? totalCost.toFixed(2) : ''} €</td>
       </tr>
     </table>
   );
