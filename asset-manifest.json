@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/meeting-cost-calculator/static/css/main.6ff4b7d7.css",
+    "main.js": "/meeting-cost-calculator/static/js/main.56b5e5bf.js",
+    "static/js/787.19663f8c.chunk.js": "/meeting-cost-calculator/static/js/787.19663f8c.chunk.js",
+    "index.html": "/meeting-cost-calculator/index.html",
+    "main.6ff4b7d7.css.map": "/meeting-cost-calculator/static/css/main.6ff4b7d7.css.map",
+    "main.56b5e5bf.js.map": "/meeting-cost-calculator/static/js/main.56b5e5bf.js.map",
+    "787.19663f8c.chunk.js.map": "/meeting-cost-calculator/static/js/787.19663f8c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ff4b7d7.css",
+    "static/js/main.56b5e5bf.js"
+  ]
+}
