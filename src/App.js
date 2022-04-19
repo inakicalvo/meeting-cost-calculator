@@ -5,9 +5,7 @@ import PersonForm from "./components/PersonForm";
 import Table from "./components/Table";
 
 function App() {
-  const [participants, setParticipants] = useState([
-    // { name: "Iñaki Calvo", time: 2, rate: 20 },
-  ]);
+  const [participants, setParticipants] = useState([]);
 
   const addParticipant = (participantInfo) => {
     setParticipants([...participants, participantInfo]);

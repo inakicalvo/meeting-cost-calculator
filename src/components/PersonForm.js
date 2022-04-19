@@ -31,7 +31,7 @@ const PersonForm = ({addParticipant}) => {
         </div>
         <div>
             <label htmlFor="hourlyRate">Hourly rate</label>
-            <input type="number" step="0.01" min="0.01" name="rate" placeholder='2' value={participantInfo.rate} id="hourlyRate" onChange={handleChange} required/>
+            <input type="number" step="0.01" min="0.01" name="rate" placeholder='36' value={participantInfo.rate} id="hourlyRate" onChange={handleChange} required/>
         </div>
         <input type="submit" value="Add person to meeting" />
     </form>
