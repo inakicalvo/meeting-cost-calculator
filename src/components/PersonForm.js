@@ -10,7 +10,10 @@ const PersonForm = ({addParticipant}) => {
     })
 
     const handleChange = (e) => {
-        setParticipantInfo({...participantInfo, [e.target.name]: [e.target.value]})
+        setParticipantInfo({
+            ...participantInfo,
+            [e.target.name]: e.target.value
+        })
     }
 
     const handleSubmit = (e) => {
