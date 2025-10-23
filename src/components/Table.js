@@ -29,7 +29,7 @@ const Table = ({ participants }) => {
         <tfoot>
           <tr>
             <td colSpan={3} className="no-left-bottom-border td-right fw-700">Total cost 👉</td>
-            <td className="td-right fw-700">{participants.length > 1 ? totalCost.toFixed(2) : ''}&nbsp;€</td>
+            <td className="td-right fw-700">{totalCost.toFixed(2)}&nbsp;€</td>
           </tr>
         </tfoot>
       </table>
